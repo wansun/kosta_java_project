@@ -1,20 +1,20 @@
 package step11;
-//abstract class : Á÷Á¢ °´Ã¼È­ µÉ ¼ö ¾ø´Ù. ºÎ¸ğ·Î¼­ÀÇ ¿ªÇÒÀ» ÇÑ´Ù.
+//abstract class : ì§ì ‘ ê°ì²´í™” ë  ìˆ˜ ì—†ë‹¤. ë¶€ëª¨ë¡œì„œì˜ ì—­í• ì„ í•œë‹¤.
 abstract class Animal{
 	Animal(){
-		System.out.println("Animal °´Ã¼ »ı¼º");
+		System.out.println("Animal ê°ì²´ ìƒì„±");
 	}
 	public void eat() {
-		System.out.println("¸Ô´Ù");
+		System.out.println("ë¨¹ë‹¤");
 	}
 }
 class Monkey extends Animal{}
 public class TestAbstract1 {
 	public static void main(String[] args) {
-		//AnimalÀº abstract·Î ¼±¾ğµÇ¾î ¾Æ·¡¿Í °°ÀÌ °´Ã¼ »ı¼ºÇÒ ¼ö ¾ø´Ù.
+		//Animalì€ abstractë¡œ ì„ ì–¸ë˜ì–´ ì•„ë˜ì™€ ê°™ì´ ê°ì²´ ìƒì„±í•  ìˆ˜ ì—†ë‹¤.
 		//Animal a=new Animal();
-		//¾Æ·¡¿Í °°ÀÌ ÀÚ½Ä °´Ã¼°¡ »ı¼ºµÉ ¶§ ºÎ¸ğ °´Ã¼·Î¼­´Â »ı¼ºÀÌ µÈ´Ù
-		//Áï abstract class´Â ÀÚ½ÄÀ» À§ÇØ Á¸ÀçÇÑ´Ù.
+		//ì•„ë˜ì™€ ê°™ì´ ìì‹ ê°ì²´ê°€ ìƒì„±ë  ë•Œ ë¶€ëª¨ ê°ì²´ë¡œì„œëŠ” ìƒì„±ì´ ëœë‹¤
+		//ì¦‰ abstract classëŠ” ìì‹ì„ ìœ„í•´ ì¡´ì¬í•œë‹¤.
 		Animal a=new Monkey();
 		a.eat();
 	}

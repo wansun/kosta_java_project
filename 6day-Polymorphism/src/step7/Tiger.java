@@ -3,6 +3,6 @@ package step7;
 public class Tiger extends Animal{
 	@Override
 	public void play() {
-		System.out.println("È£¶ûÀÌ°¡ »ç³ÉÇÏ¸ç ³î´Ù");
+		System.out.println("í˜¸ë‘ì´ê°€ ì‚¬ëƒ¥í•˜ë©° ë†€ë‹¤");
 	}
 }

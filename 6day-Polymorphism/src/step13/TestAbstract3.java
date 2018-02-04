@@ -4,19 +4,19 @@ public class TestAbstract3 {
 	public static void main(String[] args) {
 		PizzaService service=new PotatoPizzaService();
 		service.makePizza();
-		/* µµ¿ì¸¦ ¸¸µé´Ù
-		 * °¨ÀÚ ÅäÇÎÀ» ¾ñ´Ù
-		 * ±Á´Ù
-		 * ÀÚ¸£´Ù
-		 * Æ÷ÀåÇÏ´Ù
+		/* ë„ìš°ë¥¼ ë§Œë“¤ë‹¤
+		 * ê°ìž í† í•‘ì„ ì–¹ë‹¤
+		 * êµ½ë‹¤
+		 * ìžë¥´ë‹¤
+		 * í¬ìž¥í•˜ë‹¤
 		 */
 		PizzaService service2=new SeaFoodPizzaService();
 		service2.makePizza();
-		/* µµ¿ì¸¦ ¸¸µé´Ù
-		 * ÇØ»ê¹° ÅäÇÎÀ» ¾ñ´Ù
-		 * ±Á´Ù
-		 * ÀÚ¸£´Ù
-		 * Æ÷ÀåÇÏ´Ù
+		/* ë„ìš°ë¥¼ ë§Œë“¤ë‹¤
+		 * í•´ì‚°ë¬¼ í† í•‘ì„ ì–¹ë‹¤
+		 * êµ½ë‹¤
+		 * ìžë¥´ë‹¤
+		 * í¬ìž¥í•˜ë‹¤
 		 */
 
 	}

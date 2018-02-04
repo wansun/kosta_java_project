@@ -1,21 +1,21 @@
 package step3;
 class Employee{
 	public void calculateSalary() {
-		System.out.println("»ç¿ø ¿ù±Ş °è»ê");
+		System.out.println("ì‚¬ì› ì›”ê¸‰ ê³„ì‚°");
 	}
 }
 class Engineer extends Employee{
 	@Override
 	public void calculateSalary() {
 			super.calculateSalary();
-			System.out.println("¿£Áö´Ï¾î Ãß°¡¼ö´ç °è»ê");
+			System.out.println("ì—”ì§€ë‹ˆì–´ ì¶”ê°€ìˆ˜ë‹¹ ê³„ì‚°");
 	}
 }
 class Manager extends Employee{
 	@Override
 	public void calculateSalary() {
 		super.calculateSalary();
-		System.out.println("¸Å´ÏÀú ºÎ¼­¿î¿µ Æ¯È°ºñ °è»ê");
+		System.out.println("ë§¤ë‹ˆì € ë¶€ì„œìš´ì˜ íŠ¹í™œë¹„ ê³„ì‚°");
 	}
 }
 class CompanyService{
@@ -29,9 +29,9 @@ public class TestPolymorphism3 {
 		service.printSalary(new Manager());
 		service.printSalary(new Engineer());
 		service.printSalary(new Employee());
-		/*  »ç¿ø ¿ù±Ş °è»ê
-		 *  ¿£Áö´Ï¾î Ãß°¡¼ö´ç °è»ê
-		 *  ¸Å´ÏÀú ºÎ¼­¿î¿µ Æ¯È°ºñ °è»ê
+		/*  ì‚¬ì› ì›”ê¸‰ ê³„ì‚°
+		 *  ì—”ì§€ë‹ˆì–´ ì¶”ê°€ìˆ˜ë‹¹ ê³„ì‚°
+		 *  ë§¤ë‹ˆì € ë¶€ì„œìš´ì˜ íŠ¹í™œë¹„ ê³„ì‚°
 		 */ 
 	}
 }

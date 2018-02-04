@@ -1,16 +1,16 @@
 package step4;
 
 public class TestStatic4 {
-	//java api ¿¡¼­ Á¦°øÇÏ´Â static field(»ó¼ö¿Í º¯¼ö)¿Í method »ç¿ë
+	//java api ì—ì„œ ì œê³µí•˜ëŠ” static field(ìƒìˆ˜ì™€ ë³€ìˆ˜)ì™€ method ì‚¬ìš©
 	public static void main(String[] args) {
-		// intÇüÀÇ ÃÖ´ë°ª
-		// static fieldÀÌ¹Ç·Î Å¬·¡½º¸íÀ¸·Î Á¢±ÙÇÑ´Ù
+		// intí˜•ì˜ ìµœëŒ€ê°’
+		// static fieldì´ë¯€ë¡œ í´ë˜ìŠ¤ëª…ìœ¼ë¡œ ì ‘ê·¼í•œë‹¤
 		System.out.println(Integer.MAX_VALUE);
 		String s1="1";
 		String s2="2";
 		System.out.println(s1+s2);
-		//Integer class ÀÇ static methodÀÎ parseInt() ¸¦ ÀÌ¿ëÇØ ¹®ÀÚ¿­À» 
-		//int ÇüÀ¸·Î º¯È¯
+		//Integer class ì˜ static methodì¸ parseInt() ë¥¼ ì´ìš©í•´ ë¬¸ìì—´ì„ 
+		//int í˜•ìœ¼ë¡œ ë³€í™˜
 		int num1=Integer.parseInt(s1);
 		int num2=Integer.parseInt(s2);
 		System.out.println(num1+num2);

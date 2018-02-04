@@ -8,6 +8,6 @@ public class Student extends Person{
 		this.studentNumber=studentNumber;
 	}
 	protected String getInfo() {
-		return "ÀüÈ­¹øÈ£ : "+super.getTel()+"  / ÀÌ¸§ : "+super.getName()+"  / ÁÖ¼Ò : "+super.getAddress()+"  / ºÎ¼­ : "+studentNumber;
+		return "ì „í™”ë²ˆí˜¸ : "+super.getTel()+"  / ì´ë¦„ : "+super.getName()+"  / ì£¼ì†Œ : "+super.getAddress()+"  / ë¶€ì„œ : "+studentNumber;
 	}
 }

@@ -2,12 +2,12 @@ package step8;
 interface A{
 	public void testA();
 }
-//ÀÎÅÍÆäÀÌ½º³¢¸®´Â »ó¼ÓÀÌ °¡´ÉÇÏ´Ù
+//ì¸í„°í˜ì´ìŠ¤ë¼ë¦¬ëŠ” ìƒì†ì´ ê°€ëŠ¥í•˜ë‹¤
 interface B extends A{
 	public void testB();
 }
-//B interface´Â Ãß»ó¸Ş¼­µå testB() ¿Í »ó¼Ó¹ŞÀº testA()°¡
-//ÀÖÀ¸¹Ç·Î µÎ ¸Ş¼­µå¸¦ ¸ğµÎ ±¸ÇöÇØ¾ß ÇÑ´Ù.
+//B interfaceëŠ” ì¶”ìƒë©”ì„œë“œ testB() ì™€ ìƒì†ë°›ì€ testA()ê°€
+//ìˆìœ¼ë¯€ë¡œ ë‘ ë©”ì„œë“œë¥¼ ëª¨ë‘ êµ¬í˜„í•´ì•¼ í•œë‹¤.
 class C implements B{
 
 	@Override

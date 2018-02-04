@@ -1,7 +1,7 @@
 package step4;
 /*
- *  instanceof : is a °ü°è ¼º¸³½Ã true¸¦ ¹İÈ¯
- *  			°´Ã¼ Å¸ÀÔÀ» ºñ±³ÇÑ´Ù
+ *  instanceof : is a ê´€ê³„ ì„±ë¦½ì‹œ trueë¥¼ ë°˜í™˜
+ *  			ê°ì²´ íƒ€ì…ì„ ë¹„êµí•œë‹¤
  */
 class Employee{}
 class Engineer extends Employee{}
@@ -10,13 +10,13 @@ class Dog{}
 public class TestInstanceof {
 	public static void main(String[] args) {
 		Employee m=new Manager();
-		//mÀÌ ÂüÁ¶ÇÏ´Â °´Ã¼´Â Manager ÀÌ¹Ç·Î true
+		//mì´ ì°¸ì¡°í•˜ëŠ” ê°ì²´ëŠ” Manager ì´ë¯€ë¡œ true
 		System.out.println(m instanceof Manager); //ture
-		//mÀÌ ÂüÁ¶ÇÏ´Â °´Ã¼´Â ManagerÀÌ°í Employee ÀÚ½ÄÀÌ¹Ç·Î true
+		//mì´ ì°¸ì¡°í•˜ëŠ” ê°ì²´ëŠ” Managerì´ê³  Employee ìì‹ì´ë¯€ë¡œ true
 		System.out.println(m instanceof Employee);//true
-		//ÄÄÆÄÀÏ ¿¡·¯, ºñ±³ºÒ°¡ (½ÇÇà ºÒ°¡ÇÑ ¾Ö´Â ÄÄÆÄÀÏÁ¶Â÷ ¾ÈÇØ¼­ ½ÇÇàÀÌ ¾ÈµÈ´Ù)
+		//ì»´íŒŒì¼ ì—ëŸ¬, ë¹„êµë¶ˆê°€ (ì‹¤í–‰ ë¶ˆê°€í•œ ì• ëŠ” ì»´íŒŒì¼ì¡°ì°¨ ì•ˆí•´ì„œ ì‹¤í–‰ì´ ì•ˆëœë‹¤)
 		//System.out.println(m instanceof Dog);
-		//mÀÌ ÂüÁ¶ÇÏ´Â °´Ã¼´Â Manager ÀÌ°í Engineer°¡ ¾Æ´Ï¹Ç·Î false
+		//mì´ ì°¸ì¡°í•˜ëŠ” ê°ì²´ëŠ” Manager ì´ê³  Engineerê°€ ì•„ë‹ˆë¯€ë¡œ false
 		System.out.println(m instanceof Engineer); //false
 	}
 }

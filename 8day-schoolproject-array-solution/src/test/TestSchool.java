@@ -2,52 +2,52 @@ package test;
 
 import model.*;
 /**
- * SchoolSerivceÀÇ ¼­ºñ½º¸¦ Å×½ºÆ®ÇÏ´Â Å¬·¡½º
+ * SchoolSerivceì˜ ì„œë¹„ìŠ¤ë¥¼ í…ŒìŠ¤íŠ¸í•˜ëŠ” í´ë˜ìŠ¤
  * @author KOSTA16
  * 
  */
 public class TestSchool {
 	public static void main(String[] args) {
 		SchoolService service=new SchoolService();
-		service.addPerson(new Student("0101231234","¾ÆÀÌÀ¯","È­¼º","17"));
-		service.addPerson(new Teacher("0101231235","ÀÌÈ¿¸®","¼öÁö","ÀÚ¹Ù"));
-		service.addPerson(new Student("0101231236","ÀÌ»ó¼ø","¼ö¿ø","16"));
-		service.addPerson(new Employee("0101231237","°øÀ¯","ÀÌÃµ","Àç¹«ºÎ"));
-		service.addPerson(new Student("0101231238","°­µ¿¿ø","Àá½Ç","18"));
-		service.addPerson(new Teacher("0101231239","¼³Çö","»ç´ç","¼öÇĞ"));
-		//¾Æ·¡ ¶óÀÎÀº Å×½ºÆ®¿ë ÄÚµå 
-		//service.addPerson(new Person("070","Æ®·³ÇÁ","¿ö½ÌÅÏ"));
+		service.addPerson(new Student("0101231234","ì•„ì´ìœ ","í™”ì„±","17"));
+		service.addPerson(new Teacher("0101231235","ì´íš¨ë¦¬","ìˆ˜ì§€","ìë°”"));
+		service.addPerson(new Student("0101231236","ì´ìƒìˆœ","ìˆ˜ì›","16"));
+		service.addPerson(new Employee("0101231237","ê³µìœ ","ì´ì²œ","ì¬ë¬´ë¶€"));
+		service.addPerson(new Student("0101231238","ê°•ë™ì›","ì ì‹¤","18"));
+		service.addPerson(new Teacher("0101231239","ì„¤í˜„","ì‚¬ë‹¹","ìˆ˜í•™"));
+		//ì•„ë˜ ë¼ì¸ì€ í…ŒìŠ¤íŠ¸ìš© ì½”ë“œ 
+		//service.addPerson(new Person("070","íŠ¸ëŸ¼í”„","ì›Œì‹±í„´"));
 		
-//		//Áßº¹Å×½ºÆ® ¹× Á¤¿ø ÃÊ°ú Å×½ºÆ® ( ¹è¿­ length¸¦ ¼öÁ¤ ) 
-		service.addPerson(new Student("0101231238","¾ÆÀÌÀ¯","Àá½Ç","18"));
+//		//ì¤‘ë³µí…ŒìŠ¤íŠ¸ ë° ì •ì› ì´ˆê³¼ í…ŒìŠ¤íŠ¸ ( ë°°ì—´ lengthë¥¼ ìˆ˜ì • ) 
+		service.addPerson(new Student("0101231238","ì•„ì´ìœ ","ì ì‹¤","18"));
 		System.out.println("    ");
-		System.out.println("***ÇĞ±³ ±¸¼º¿ø µî·Ï ¿Ï·á***");
+		System.out.println("***í•™êµ êµ¬ì„±ì› ë“±ë¡ ì™„ë£Œ***");
 		System.out.println("    ");
-		service.printAll();//6¸í Ãâ·Â 
+		service.printAll();//6ëª… ì¶œë ¥ 
 		System.out.println("    ");
-		System.out.println("***ÀüÃ¼ ±¸¼º¿ø Ãâ·Â ¿Ï·á***");		
+		System.out.println("***ì „ì²´ êµ¬ì„±ì› ì¶œë ¥ ì™„ë£Œ***");		
 		System.out.println("    ");
 		String tel="0101231238";
 		Person p=service.findPersonByTel(tel);
-		System.out.println("°Ë»ö°á°ú:"+p);
-		// tel¿¡ ÇØ´çÇÏ´Â ±¸¼º¿øÀÌ ÀÖÀ¸¸é Ãâ·ÂÇÏ°í ¾øÀ¸¸é nullÀÌ Ãâ·ÂµÊ 
+		System.out.println("ê²€ìƒ‰ê²°ê³¼:"+p);
+		// telì— í•´ë‹¹í•˜ëŠ” êµ¬ì„±ì›ì´ ìˆìœ¼ë©´ ì¶œë ¥í•˜ê³  ì—†ìœ¼ë©´ nullì´ ì¶œë ¥ë¨ 
 		System.out.println("    ");
-		System.out.println("***°Ë»ö¿Ï·á***");		
+		System.out.println("***ê²€ìƒ‰ì™„ë£Œ***");		
 		System.out.println("    ");
-		System.out.println("¼öÁ¤ Àü Á¤º¸:"+service.findPersonByTel("0101231237"));
-		service.updatePerson(new Employee("0101231237","À¯µ¿±Ô","¼¼Á¾","±¹¹æºÎ"));
-		System.out.println("¼öÁ¤ ÈÄ Á¤º¸:"+service.findPersonByTel("0101231237"));
+		System.out.println("ìˆ˜ì • ì „ ì •ë³´:"+service.findPersonByTel("0101231237"));
+		service.updatePerson(new Employee("0101231237","ìœ ë™ê·œ","ì„¸ì¢…","êµ­ë°©ë¶€"));
+		System.out.println("ìˆ˜ì • í›„ ì •ë³´:"+service.findPersonByTel("0101231237"));
 		System.out.println("    ");
-		System.out.println("**¼öÁ¤ Å×½ºÆ® ¿Ï·á**");/**/
+		System.out.println("**ìˆ˜ì • í…ŒìŠ¤íŠ¸ ì™„ë£Œ**");/**/
 		System.out.println("    ");
-		System.out.println("**»èÁ¦ Àü ¸í´Ü**");
+		System.out.println("**ì‚­ì œ ì „ ëª…ë‹¨**");
 		System.out.println("    ");
-		service.printAll();//6¸í Ãâ·Â 
+		service.printAll();//6ëª… ì¶œë ¥ 
 		service.deletePerson("0101231239");
 		System.out.println("    ");
-		System.out.println("**»èÁ¦ ÈÄ ¸í´Ü**");
+		System.out.println("**ì‚­ì œ í›„ ëª…ë‹¨**");
 		System.out.println("    ");
-		service.printAll();//5¸í Ãâ·Â 
+		service.printAll();//5ëª… ì¶œë ¥ 
 	}
 }
 

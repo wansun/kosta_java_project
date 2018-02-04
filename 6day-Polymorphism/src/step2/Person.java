@@ -2,6 +2,6 @@ package step2;
 
 public class Person extends Animal{
 	public void eat() {
-		System.out.println("»ç¶÷ÀÌ ¼öÀú·Î ¸Ô´Ù");
+		System.out.println("ì‚¬ëŒì´ ìˆ˜ì €ë¡œ ë¨¹ë‹¤");
 	}
 }

@@ -3,9 +3,9 @@ package step7;
 public class Person extends Animal{
 	@Override
 	public void play() {
-		System.out.println("»ç¶÷ÀÌ µ¥ÀÌÆ®ÇÏ¸ç ³î´Ù");
+		System.out.println("ì‚¬ëŒì´ ë°ì´íŠ¸í•˜ë©° ë†€ë‹¤");
 	}
 	public void ticketing() {
-		System.out.println("»ç¶÷ÀÌ Æ¼ÄÏÀ» ±¸¸ÅÇÏ´Ù");
+		System.out.println("ì‚¬ëŒì´ í‹°ì¼“ì„ êµ¬ë§¤í•˜ë‹¤");
 	}
 }

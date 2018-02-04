@@ -1,14 +1,14 @@
 package step5;
 class Car{
-	int count; //heap ¿µ¿ª¿¡ ¸Å¹ø »õ·Ó°Ô ÃÊ±âÈ­
-	static int sCount; // class area ¿µ¿ª¿¡ ÇÏ³ªÀÇ °ø°£ÀÌ »ı¼º
+	int count; //heap ì˜ì—­ì— ë§¤ë²ˆ ìƒˆë¡­ê²Œ ì´ˆê¸°í™”
+	static int sCount; // class area ì˜ì—­ì— í•˜ë‚˜ì˜ ê³µê°„ì´ ìƒì„±
 	Car(){
 		count++;
 		sCount++;
 	}
 }
 public class TestStatic5 {
-	// ½ÇÇà°á°ú¸¦ ¿¹»óÇØº¸´Â ¿¹Á¦
+	// ì‹¤í–‰ê²°ê³¼ë¥¼ ì˜ˆìƒí•´ë³´ëŠ” ì˜ˆì œ
 	public static void main(String[] args) {
 		Car c1=new Car();
 		System.out.println(c1.count);
@@ -18,7 +18,7 @@ public class TestStatic5 {
 		System.out.println(c3.count);
 		System.out.println(Car.sCount);
 	}
-	static { // main method º¸´Ù ¿ì¼±ÇØ¼­ ½ÇÇàµÈ´Ù.
-		System.out.println("static ÃÊ±âÈ­ ½ÇÇà¿µ¿ª");
+	static { // main method ë³´ë‹¤ ìš°ì„ í•´ì„œ ì‹¤í–‰ëœë‹¤.
+		System.out.println("static ì´ˆê¸°í™” ì‹¤í–‰ì˜ì—­");
 	}
 }

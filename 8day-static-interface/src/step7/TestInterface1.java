@@ -1,42 +1,42 @@
 package step7;
-//ÀÎÅÍÆäÀÌ½º ¹®¹ı È®ÀÎ ¿¹Á¦
-//interface´Â °´Ã¼È­ µÉ ¼ö ¾ø´Ù  new Flyer(); //compile error
+//ì¸í„°í˜ì´ìŠ¤ ë¬¸ë²• í™•ì¸ ì˜ˆì œ
+//interfaceëŠ” ê°ì²´í™” ë  ìˆ˜ ì—†ë‹¤  new Flyer(); //compile error
 interface Flyer{
-	//static final »ó¼ö
-	int MAX_COUNT=10; //public static final »ı·« °¡´É
-	//field(»ó¼ö,º¯¼ö)¸¦ ¼±¾ğÇÏ¸é ÀÎÅÍÆäÀÌ½º ³»¿¡¼­´Â
-	//¹«Á¶°Ç static final Ã³¸®°¡ µÇ¹Ç·Î ÀÎ½ºÅÏ½º º¯¼ö´Â ¼±¾ğÀÌ ºÒ°¡´É
+	//static final ìƒìˆ˜
+	int MAX_COUNT=10; //public static final ìƒëµ ê°€ëŠ¥
+	//field(ìƒìˆ˜,ë³€ìˆ˜)ë¥¼ ì„ ì–¸í•˜ë©´ ì¸í„°í˜ì´ìŠ¤ ë‚´ì—ì„œëŠ”
+	//ë¬´ì¡°ê±´ static final ì²˜ë¦¬ê°€ ë˜ë¯€ë¡œ ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜ëŠ” ì„ ì–¸ì´ ë¶ˆê°€ëŠ¥
 	//int money; //compile error
-	public void fly(); //abstract »ı·« °¡´É
-	//public void test() {} //±¸ÇöºÎ°¡ ÀÖ´Â ¸Ş¼­µå Á¤ÀÇÇÒ ¼ö ¾ø´Ù
-	//java8 (jdk 1.8)¿¡¼­´Â static method¿Í default method¸¦ Áö¿øÇÑ´Ù
-	//static ¸Ş¼­µå Á¤ÀÇ °¡´É
+	public void fly(); //abstract ìƒëµ ê°€ëŠ¥
+	//public void test() {} //êµ¬í˜„ë¶€ê°€ ìˆëŠ” ë©”ì„œë“œ ì •ì˜í•  ìˆ˜ ì—†ë‹¤
+	//java8 (jdk 1.8)ì—ì„œëŠ” static methodì™€ default methodë¥¼ ì§€ì›í•œë‹¤
+	//static ë©”ì„œë“œ ì •ì˜ ê°€ëŠ¥
 	public static void test() {}
-	//default method Á¤ÀÇ °¡´É : À¯Áöº¸¼ö¼ºÀ» À§ÇØ java8¿¡¼­ Ãß°¡µÇ¾úÀ½
+	//default method ì •ì˜ ê°€ëŠ¥ : ìœ ì§€ë³´ìˆ˜ì„±ì„ ìœ„í•´ java8ì—ì„œ ì¶”ê°€ë˜ì—ˆìŒ
 	public default void testDefault() {}
 }
 interface Eater{}
 class Animal{}
-//extends ´Â ÇÑ¹ø¸¸ °¡´ÉÇÏ°í implements ÀÎÅÍÆäÀÌ½º´Â ¾Æ·¡¿Í °°ÀÌ
-//¿©·¯°³¸¦ implements ÇÒ ¼ö ÀÖ´Ù
+//extends ëŠ” í•œë²ˆë§Œ ê°€ëŠ¥í•˜ê³  implements ì¸í„°í˜ì´ìŠ¤ëŠ” ì•„ë˜ì™€ ê°™ì´
+//ì—¬ëŸ¬ê°œë¥¼ implements í•  ìˆ˜ ìˆë‹¤
 class Bird extends Animal implements Flyer,Eater{
-	//»óÀ§ ÀÎÅÍÆäÀÌ½ºÀÇ Ãß»ó ¸Ş¼­µå¸¦ ±¸ÇöÇØ¾ß ÇÑ´Ù
+	//ìƒìœ„ ì¸í„°í˜ì´ìŠ¤ì˜ ì¶”ìƒ ë©”ì„œë“œë¥¼ êµ¬í˜„í•´ì•¼ í•œë‹¤
 	@Override
 	public void fly() {
-		System.out.println("»õ°¡ ³¯´Ù");
+		System.out.println("ìƒˆê°€ ë‚ ë‹¤");
 	}
 	
 }
 class Airplane implements Flyer{
 	@Override
 	public void fly() {
-		System.out.println("ºñÇà±â°¡ ³¯´Ù");
+		System.out.println("ë¹„í–‰ê¸°ê°€ ë‚ ë‹¤");
 	}
 }
 public class TestInterface1 {
 	public static void main(String[] args) {
-		//Flyer »óÀ§ ÀÎÅÍÆäÀÌ½º Å¸ÀÔÀ¸·Î ÇÏÀ§ °´Ã¼ ÂüÁ¶°¡´É
-		//´ÙÇü¼º Áö¿øµÈ´Ù.
+		//Flyer ìƒìœ„ ì¸í„°í˜ì´ìŠ¤ íƒ€ì…ìœ¼ë¡œ í•˜ìœ„ ê°ì²´ ì°¸ì¡°ê°€ëŠ¥
+		//ë‹¤í˜•ì„± ì§€ì›ëœë‹¤.
 		Flyer f1=new Bird();
 		f1.fly();
 		Flyer f2=new Airplane();

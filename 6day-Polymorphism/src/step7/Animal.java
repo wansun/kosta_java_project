@@ -2,7 +2,7 @@ package step7;
 
 public class Animal {
 	public void play() {
-		System.out.println("µ¿¹°ÀÌ ¸Ô´Ù");
+		System.out.println("ë™ë¬¼ì´ ë¨¹ë‹¤");
 	}	
 }
 

@@ -2,17 +2,17 @@ package step6;
 class FinalExam{
 	final int MAX_PRICE=100;
 	public void test() {
-		// final »ó¼öÀÌ¹Ç·Î ÀçÇÒ´ç ºÒ°¡
+		// final ìƒìˆ˜ì´ë¯€ë¡œ ì¬í• ë‹¹ ë¶ˆê°€
 		//MAX_PRICE=2;
 	}
-	//final ¸Ş¼­µå´Â ÀÚ½Ä Å¬·¡½º¿¡¼­ ¿À¹ÙÀÌµù ºÒ°¡
+	//final ë©”ì„œë“œëŠ” ìì‹ í´ë˜ìŠ¤ì—ì„œ ì˜¤ë°”ì´ë”© ë¶ˆê°€
 	public final void test2() {}
 }
 final class Child extends FinalExam{
-	//compile error : final method ´Â ¿À¹ö¶óÀÌµù ¸øÇÔ
+	//compile error : final method ëŠ” ì˜¤ë²„ë¼ì´ë”© ëª»í•¨
 	//public void test2() {}
 }
-//final class´Â »ó¼ÓÇÒ ¼ö ¾ø´Ù
+//final classëŠ” ìƒì†í•  ìˆ˜ ì—†ë‹¤
 //class SubChild extends Child{}
 public class TestFinal {
 

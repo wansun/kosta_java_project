@@ -7,13 +7,13 @@ public class SchoolService {
 	public void addPerson(Person a) {
 
 		if(count>=10) {
-		System.out.println("Á¤ ¿ø ÃÊ °ú   ¹ß »ı");
+		System.out.println("ì • ì› ì´ˆ ê³¼   ë°œ ìƒ");
 		return;
 		}
 		
 		for(int i=0;i<count;i++) {
 			if(p[i].getTel().equals(a.getTel())) {
-				System.out.println("!! Áß º¹ ¹ß »ı !!");
+				System.out.println("!! ì¤‘ ë³µ ë°œ ìƒ !!");
 				return;
 			}
 		}

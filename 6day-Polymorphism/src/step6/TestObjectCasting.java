@@ -1,34 +1,34 @@
 package step6;
 class Animal{
 	public void eat() {
-		System.out.println("¸Ô´Ù");
+		System.out.println("ë¨¹ë‹¤");
 	}
 	public void sleep() {
-		System.out.println("ÀÚ´Ù");
+		System.out.println("ìë‹¤");
 	}
 }
 class Person extends Animal{
-	@Override //¿À¹ö¶óÀÌµå ¹®¹ı Ã¼Å© ¾î³ëÅ×ÀÌ¼Ç
+	@Override //ì˜¤ë²„ë¼ì´ë“œ ë¬¸ë²• ì²´í¬ ì–´ë…¸í…Œì´ì…˜
 	public void eat() {
-		System.out.println("»ç¶÷ÀÌ ¼öÀú·Î ¸Ô´Ù");
+		System.out.println("ì‚¬ëŒì´ ìˆ˜ì €ë¡œ ë¨¹ë‹¤");
 	}
-	public void study() { //PersonÀÇ ¸Ş¼­µå
-		System.out.println("»ç¶÷ÀÌ °øºÎÇÏ´Ù");
+	public void study() { //Personì˜ ë©”ì„œë“œ
+		System.out.println("ì‚¬ëŒì´ ê³µë¶€í•˜ë‹¤");
 	}
 }
 public class TestObjectCasting {
 	public static void main(String[] args) {
-		//ÀÚ½Ä °´Ã¼¸¦ ºÎ¸ğ Å¸ÀÔÀÇ º¯¼ö·Î ÂüÁ¶ÇÏ¸é
+		//ìì‹ ê°ì²´ë¥¼ ë¶€ëª¨ íƒ€ì…ì˜ ë³€ìˆ˜ë¡œ ì°¸ì¡°í•˜ë©´
 		Animal a=new Person();
-		//»ó¼Ó¹ŞÀº ºÎ¸ğ ¸Ş¼­µå È£Ãâ
+		//ìƒì†ë°›ì€ ë¶€ëª¨ ë©”ì„œë“œ í˜¸ì¶œ
 		a.sleep();
-		//¿À¹ö¶óÀÌµå µÈ ¸Ş¼­µå È£Ãâ
+		//ì˜¤ë²„ë¼ì´ë“œ ëœ ë©”ì„œë“œ í˜¸ì¶œ
 		a.eat();
-		//ÀÚ½ÄÀÇ µ¶ÀÚÀûÀÎ ¸â¹ö(º¯¼ö ¶Ç´Â ¸Ş¼­µå)´Â Á¢±ÙºÒ°¡
-		//Person °´Ã¼ÀÌÁö¸¸ a º¯¼ö Å¸ÀÔÀº AnimalÀÌ¹Ç·Î ÄÄÆÄÀÏ ¿¡·¯
+		//ìì‹ì˜ ë…ìì ì¸ ë©¤ë²„(ë³€ìˆ˜ ë˜ëŠ” ë©”ì„œë“œ)ëŠ” ì ‘ê·¼ë¶ˆê°€
+		//Person ê°ì²´ì´ì§€ë§Œ a ë³€ìˆ˜ íƒ€ì…ì€ Animalì´ë¯€ë¡œ ì»´íŒŒì¼ ì—ëŸ¬
 		//a.study();
-		//ÀÚ½ÄÀÇ µ¶ÀÚÀûÀÎ ¸â¹ö¿¡ Á¢±ÙÇÏ±â À§ÇØ¼­´Â
-		// a º¯¼ö¸¦ ÀÚ½Ä Å¸ÀÔÀ¸·Î Ä³½ºÆÃÇÏ¸é µÈ´Ù.
+		//ìì‹ì˜ ë…ìì ì¸ ë©¤ë²„ì— ì ‘ê·¼í•˜ê¸° ìœ„í•´ì„œëŠ”
+		// a ë³€ìˆ˜ë¥¼ ìì‹ íƒ€ì…ìœ¼ë¡œ ìºìŠ¤íŒ…í•˜ë©´ ëœë‹¤.
 		((Person)a).study();
 	}
 }

@@ -3,6 +3,6 @@ package step9;
 public class AlSongPlayer implements Player{
 	@Override
 	public void play() {
-		System.out.println("¾Ë¼ÛÇÃ·¹ÀÌ¾î°¡ À½¾ÇÀ» Àç»ıÇÏ´Ù");
+		System.out.println("ì•Œì†¡í”Œë ˆì´ì–´ê°€ ìŒì•…ì„ ì¬ìƒí•˜ë‹¤");
 	}
 }

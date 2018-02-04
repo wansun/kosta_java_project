@@ -2,6 +2,6 @@ package step2;
 
 public class Dog extends Animal{
 	public void eat() {
-		System.out.println("°³°¡ »ç·á¸¦ ¸Ô´Ù");
+		System.out.println("ê°œê°€ ì‚¬ë£Œë¥¼ ë¨¹ë‹¤");
 	}
 }

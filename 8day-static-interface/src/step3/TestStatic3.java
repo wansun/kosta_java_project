@@ -1,6 +1,6 @@
 package step3;
 /**
- * static°ú non-static Á¢±Ù Å×½ºÆ®
+ * staticê³¼ non-static ì ‘ê·¼ í…ŒìŠ¤íŠ¸
  * @author rws
  *
  */
@@ -8,19 +8,19 @@ class Person{
 	static int stAge=1;
 	int age=1;
 	/*
-	 *  test1() ¸Ş¼­µå°¡ ½ÇÇàµÇ±â À§ÇØ¼­´Â °´Ã¼ »ı¼ºÀ»
-	 *  ÀüÁ¦·Î ÇÏ±â ¶§¹®¿¡ ÀÌ¹Ì class loadingÀÌ µÇ¾úÀ¸¹Ç·Î
-	 *  static stAge¿Í instance º¯¼ö age ¿¡ ¸ğµÎ Á¢±Ù °¡´É
+	 *  test1() ë©”ì„œë“œê°€ ì‹¤í–‰ë˜ê¸° ìœ„í•´ì„œëŠ” ê°ì²´ ìƒì„±ì„
+	 *  ì „ì œë¡œ í•˜ê¸° ë•Œë¬¸ì— ì´ë¯¸ class loadingì´ ë˜ì—ˆìœ¼ë¯€ë¡œ
+	 *  static stAgeì™€ instance ë³€ìˆ˜ age ì— ëª¨ë‘ ì ‘ê·¼ ê°€ëŠ¥
 	 */
 	public void test1() {
 		System.out.println(stAge);
 		System.out.println(age);
 	}
 	/*
-	 *  static method´Â °´Ã¼ »ı¼º¾øÀÌ Å¬·¡½º ·Îµù¸¸À¸·Î
-	 *  ½ÇÇà°¡´ÉÇÑ ¸Ş¼­µåÀÌ¹Ç·Î 
-	 *  °°Àº static ÀÎ stAge¿¡´Â Á÷Á¢ Á¢±ÙÀÌ Çã¿ëµÇÁö¸¸
-	 *  age ÀÎ½ºÅÏ½º º¯¼ö´Â °´Ã¼»ı¼º ÄÚµå°¡ ¾øÀ¸¸é »ç¿ëÀÌ ºÒ°¡ÇÏ´Ù.
+	 *  static methodëŠ” ê°ì²´ ìƒì„±ì—†ì´ í´ë˜ìŠ¤ ë¡œë”©ë§Œìœ¼ë¡œ
+	 *  ì‹¤í–‰ê°€ëŠ¥í•œ ë©”ì„œë“œì´ë¯€ë¡œ 
+	 *  ê°™ì€ static ì¸ stAgeì—ëŠ” ì§ì ‘ ì ‘ê·¼ì´ í—ˆìš©ë˜ì§€ë§Œ
+	 *  age ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜ëŠ” ê°ì²´ìƒì„± ì½”ë“œê°€ ì—†ìœ¼ë©´ ì‚¬ìš©ì´ ë¶ˆê°€í•˜ë‹¤.
 	 */
 	public static void test2() {
 		System.out.println(stAge);

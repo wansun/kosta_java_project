@@ -2,29 +2,29 @@ package step10;
 
 import java.util.TreeSet;
 
-/* java.util.Collection °è¿­ÀÇ TreeSet À» Å×½ºÆ®
- * Set °è¿­Àº ¿ä¼Ò·Î °°Àº µ¥ÀÌÅÍ Áßº¹À» Çã¿ëÇÏÁö ¾Ê´Â Æ¯Â¡
- * Set interface ÀÇ ±¸»óÅ¬·¡½º(±¸ÇöÃ¼) ÀÎ TreeSet Àº Á¤·ÄÇÏ´Â ±â´ÉÀ» ³»Àå
+/* java.util.Collection ê³„ì—´ì˜ TreeSet ì„ í…ŒìŠ¤íŠ¸
+ * Set ê³„ì—´ì€ ìš”ì†Œë¡œ ê°™ì€ ë°ì´í„° ì¤‘ë³µì„ í—ˆìš©í•˜ì§€ ì•ŠëŠ” íŠ¹ì§•
+ * Set interface ì˜ êµ¬ìƒí´ë˜ìŠ¤(êµ¬í˜„ì²´) ì¸ TreeSet ì€ ì •ë ¬í•˜ëŠ” ê¸°ëŠ¥ì„ ë‚´ì¥
  */
 public class TestSet {
 	public static void main(String[] args) {
-		// <E> : <String>  -> Generic : ¿ä¼Ò Å¸ÀÔÀ» ¸í½Ã
+		// <E> : <String>  -> Generic : ìš”ì†Œ íƒ€ì…ì„ ëª…ì‹œ
 		TreeSet<String> set=new TreeSet<String>();
-		set.add("¾ÆÀÌÀ¯");
-		set.add("¼³Çö");
-		set.add("¾ÆÀÌÀ¯"); //µ¿ÀÏÇÑ µ¥ÀÌÅÍ°¡ Áßº¹µÇ¹Ç·Î Ãß°¡µÇÁö ¾Ê´Â´Ù.
-		set.add("±è¿¬¾Æ");
+		set.add("ì•„ì´ìœ ");
+		set.add("ì„¤í˜„");
+		set.add("ì•„ì´ìœ "); //ë™ì¼í•œ ë°ì´í„°ê°€ ì¤‘ë³µë˜ë¯€ë¡œ ì¶”ê°€ë˜ì§€ ì•ŠëŠ”ë‹¤.
+		set.add("ê¹€ì—°ì•„");
 		System.out.println(set.size()); //3
-		//TreeSet ÀÌ¹Ç·Î Á¤·ÄµÇ¾î Ãâ·ÂµÈ´Ù
+		//TreeSet ì´ë¯€ë¡œ ì •ë ¬ë˜ì–´ ì¶œë ¥ëœë‹¤
 		System.out.println(set);
 		System.out.println("*************");
 		TreeSet<Integer> set2=new TreeSet<Integer>();
 		set2.add(5);
 		set2.add(3);
 		set2.add(7);
-		set2.add(3); //Áßº¹µÇ¾î Ãß°¡µÇÁö ¾Ê´Â´Ù.
+		set2.add(3); //ì¤‘ë³µë˜ì–´ ì¶”ê°€ë˜ì§€ ì•ŠëŠ”ë‹¤.
 		System.out.println(set.size());//3
-		//TreeSetÀÌ¹Ç·Î ¿À¸§Â÷¼ø Á¤·ÄµÇ¾î Ãâ·ÂµÈ´Ù
+		//TreeSetì´ë¯€ë¡œ ì˜¤ë¦„ì°¨ìˆœ ì •ë ¬ë˜ì–´ ì¶œë ¥ëœë‹¤
 		System.out.println(set2);
 		System.out.println(set2.descendingSet());
 	}

@@ -9,10 +9,10 @@ public class TestPolymorphism6 {
 	public static void main(String[] args) {
 		Animal a[]=new Animal[3];
 		a[0]=new Animal();
-		//a[1]=new Car(); //ÄÄÆÄÀÏ ¿¡·¯, ¼±¾ğµÈ ¹è¿­ Å¸ÀÔÀÇ ¿ä¼Ò°´Ã¼¸¸ °¡´É
-		a[1]=new Person(); //ÀÚ½Ä°´Ã¼´Â ºÎ¸ğÅ¸ÀÔÀÇ ¹è¿­¿¡ ¿ä¼Ò·Î °¡´É
+		//a[1]=new Car(); //ì»´íŒŒì¼ ì—ëŸ¬, ì„ ì–¸ëœ ë°°ì—´ íƒ€ì…ì˜ ìš”ì†Œê°ì²´ë§Œ ê°€ëŠ¥
+		a[1]=new Person(); //ìì‹ê°ì²´ëŠ” ë¶€ëª¨íƒ€ì…ì˜ ë°°ì—´ì— ìš”ì†Œë¡œ ê°€ëŠ¥
 		a[2]=new Monkey(); 
-		//for¹® ÀÌ¿ëÇØ play()À» È£ÃâÇØº»´Ù
+		//forë¬¸ ì´ìš©í•´ play()ì„ í˜¸ì¶œí•´ë³¸ë‹¤
 		for(int i=0;i<a.length;i++)
 			a[i].play();
 	}

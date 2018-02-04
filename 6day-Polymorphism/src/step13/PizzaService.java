@@ -2,17 +2,17 @@ package step13;
 
 public abstract class PizzaService {
 	protected void prepare() {
-		System.out.println("µµ¿ì¸¦ ¸¸µé´Ù");
+		System.out.println("ë„ìš°ë¥¼ ë§Œë“¤ë‹¤");
 	}
-	protected abstract void topping(); //ÀÚ½ÄÅ¬·¡½º¿¡ ±¸ÇöÀ» °­Á¦ÇÑ´Ù.
+	protected abstract void topping(); //ìì‹í´ë˜ìŠ¤ì— êµ¬í˜„ì„ ê°•ì œí•œë‹¤.
 	protected void bake() {
-		System.out.println("±Á´Ù");
+		System.out.println("êµ½ë‹¤");
 	}
 	protected void cutting() {
-		System.out.println("ÀÚ¸£´Ù");
+		System.out.println("ìë¥´ë‹¤");
 	}
 	protected void box() {
-		System.out.println("Æ÷ÀåÇÏ´Ù");
+		System.out.println("í¬ì¥í•˜ë‹¤");
 	}
 	// template method
 	public void makePizza() {

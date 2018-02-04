@@ -1,22 +1,22 @@
 package step12;
 //abstract method
-//Ãß»ó¸Ş¼­µå´Â ±¸ÇöºÎ°¡ ¾ø´Ù.
-//ÀÚ½Ä Å¬·¡½º¿¡¼­ ¹İµå½Ã ±¸ÇöÇÏµµ·Ï °­Á¦ÇÑ´Ù
+//ì¶”ìƒë©”ì„œë“œëŠ” êµ¬í˜„ë¶€ê°€ ì—†ë‹¤.
+//ìì‹ í´ë˜ìŠ¤ì—ì„œ ë°˜ë“œì‹œ êµ¬í˜„í•˜ë„ë¡ ê°•ì œí•œë‹¤
 abstract class Parent{
 	public void eat() {
-		System.out.println("¹ä ¸Ô´Ù");
+		System.out.println("ë°¥ ë¨¹ë‹¤");
 	}
-	//abstract method´Â ±¸ÇöºÎ¸¦ Á¤ÀÇÇÒ ¼ö ¾ø´Ù
-	//¸ñÀûÀÌ ÀÚ½Ä¿¡°Ô ±¸ÇöÀ» °­Á¦ÇÏ±â À§ÇØ ¸í½ÃÇÑ´Ù.
+	//abstract methodëŠ” êµ¬í˜„ë¶€ë¥¼ ì •ì˜í•  ìˆ˜ ì—†ë‹¤
+	//ëª©ì ì´ ìì‹ì—ê²Œ êµ¬í˜„ì„ ê°•ì œí•˜ê¸° ìœ„í•´ ëª…ì‹œí•œë‹¤.
 	public abstract void study();
 }
 class Child extends Parent{
-    //ºÎ¸ğÀÇ abstract method´Â ¹İµå½Ã ±¸ÇöÇØ¾ß ÇÑ´Ù.
-	//¸¸¾à ±¸ÇöÇÏÁö ¾ÊÀ¸¸é ÀÚ½Å ¶ÇÇÑ abstract class°¡ µÇ°Å³ª
-	//¾Æ´Ï¸é compile error
+    //ë¶€ëª¨ì˜ abstract methodëŠ” ë°˜ë“œì‹œ êµ¬í˜„í•´ì•¼ í•œë‹¤.
+	//ë§Œì•½ êµ¬í˜„í•˜ì§€ ì•Šìœ¼ë©´ ìì‹  ë˜í•œ abstract classê°€ ë˜ê±°ë‚˜
+	//ì•„ë‹ˆë©´ compile error
 	@Override
 	public void study() {
-		System.out.println("ÀÚ¹Ù¸¦ °øºÎÇÏ´Ù");
+		System.out.println("ìë°”ë¥¼ ê³µë¶€í•˜ë‹¤");
 	}
 }
 public class TestAbstract2 {

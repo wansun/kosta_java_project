@@ -5,7 +5,7 @@ import java.util.Random;
 public class TestRandom {
 	public static void main(String[] args) {
 		Random r=new Random();
-		//bound ¸¦ 3À¸·Î ÁÖ¸é 0~2 »çÀÌÀÇ ÀÓÀÇÀÇ ¼ö°¡ ¹İÈ¯
+		//bound ë¥¼ 3ìœ¼ë¡œ ì£¼ë©´ 0~2 ì‚¬ì´ì˜ ì„ì˜ì˜ ìˆ˜ê°€ ë°˜í™˜
 		System.out.println(r.nextInt(3));
 		System.out.println(r.nextInt(3));
 		for(int i=0;i<10;i++)

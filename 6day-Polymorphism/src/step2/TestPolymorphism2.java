@@ -10,9 +10,9 @@ public class TestPolymorphism2 {
 		service.pass(new Dog());
 		service.pass(new Person());
 		service.pass(new Animal());
-		/* ฐณฐก ป็ทแธฆ ธิดู
-		 * ป็ถ๗ภฬ ผ๖ภ๚ทฮ ธิดู
-		 * ธิดู
+		/* ๊ฐ๊ฐ€ ์ฌ๋ฃ๋ฅผ ๋จน๋ค
+		 * ์ฌ๋์ด ์์ €๋ก ๋จน๋ค
+		 * ๋จน๋ค
 		 */
 	}
 }

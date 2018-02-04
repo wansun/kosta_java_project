@@ -3,19 +3,19 @@ package step8;
 public class TestPolymorphism5 {
 	public static void main(String[] args) {
 		CompanyService service=new CompanyService();
-		Employee e=new Employee("18130","¾ÆÀÌÀ¯",300);
+		Employee e=new Employee("18130","ì•„ì´ìœ ",300);
 		//System.out.println(e);
-		Manager m=new Manager("18130","¾ÆÈ¿¸®",500,"¿µ¾÷ºÎ");
+		Manager m=new Manager("18130","ì•„íš¨ë¦¬",500,"ì˜ì—…ë¶€");
 	    //System.out.println(m);
-	    Engineer en=new Engineer("18111","°í½½¸µ",600,"ÀÚ¹Ù",100);
+	    Engineer en=new Engineer("18111","ê³ ìŠ¬ë§",600,"ìë°”",100);
 	    //System.out.println(en);
 	
 		
-	    //¾ÆÀÌÀ¯ ¿¬ºÀ 3600 (salary * 12)
-		System.out.println(e.getName()+"¿¬ºÀ"+service.getAnnualSalary(e));
-		//ÀÌÈ¿¸® ¿¬ºÀ 6000 (salary * 12)
-		System.out.println(m.getName()+"¿¬ºÀ"+service.getAnnualSalary(m));
-		//°í½½¸µ ¿¬ºÀ 8400 ((salary + bonus) * 12)
-		System.out.println(en.getName()+"¿¬ºÀ"+service.getAnnualSalary(en));
+	    //ì•„ì´ìœ  ì—°ë´‰ 3600 (salary * 12)
+		System.out.println(e.getName()+"ì—°ë´‰"+service.getAnnualSalary(e));
+		//ì´íš¨ë¦¬ ì—°ë´‰ 6000 (salary * 12)
+		System.out.println(m.getName()+"ì—°ë´‰"+service.getAnnualSalary(m));
+		//ê³ ìŠ¬ë§ ì—°ë´‰ 8400 ((salary + bonus) * 12)
+		System.out.println(en.getName()+"ì—°ë´‰"+service.getAnnualSalary(en));
 	}
 }

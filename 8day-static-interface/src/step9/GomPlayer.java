@@ -3,6 +3,6 @@ package step9;
 public class GomPlayer implements Player{
 	@Override
 	public void play() {
-		System.out.println("°õÇÃ·¹ÀÌ¾î°¡ µ¿¿µ»óÀ» Àç»ıÇÏ´Ù.");
+		System.out.println("ê³°í”Œë ˆì´ì–´ê°€ ë™ì˜ìƒì„ ì¬ìƒí•˜ë‹¤.");
 	}
 }

@@ -1,7 +1,7 @@
 package step1;
 
 public class TestStatic1 {
-	//ObjectÀÇ member ÀÌ¹Ç·Î °´Ã¼ »ı¼ºÇÒ ¶§¸¸ »ç¿ë°¡´É
+	//Objectì˜ member ì´ë¯€ë¡œ ê°ì²´ ìƒì„±í•  ë•Œë§Œ ì‚¬ìš©ê°€ëŠ¥
 	public void test1() {
 		System.out.println("non-static method test1");
 	}
@@ -9,9 +9,9 @@ public class TestStatic1 {
 		System.out.println("static method test2");
 	}
 	public static void main(String[] args) {
-		//test1(); //static method ³»ºÎÀÌ¹Ç·Î Á÷Á¢ Á¢±Ù ºÒ°¡
-		//°´Ã¼»ı¼ºÀÌ ÇÊ¿äÇÏ´Ù
+		//test1(); //static method ë‚´ë¶€ì´ë¯€ë¡œ ì§ì ‘ ì ‘ê·¼ ë¶ˆê°€
+		//ê°ì²´ìƒì„±ì´ í•„ìš”í•˜ë‹¤
 		new TestStatic1().test1();
-		test2(); //static method ³»ºÎ¿¡¼­ staticÀ¸·Î Á¢±ÙÀº °¡´É
+		test2(); //static method ë‚´ë¶€ì—ì„œ staticìœ¼ë¡œ ì ‘ê·¼ì€ ê°€ëŠ¥
 	}
 }

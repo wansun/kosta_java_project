@@ -3,6 +3,6 @@ package step9;
 public class CDPlayer implements Player{
 	@Override
 	public void play() {
-		System.out.println("½ÃµğÇÃ·¹ÀÌ¾î°¡ cd¸¦ Àç»ıÇÏ´Ù");
+		System.out.println("ì‹œë””í”Œë ˆì´ì–´ê°€ cdë¥¼ ì¬ìƒí•˜ë‹¤");
 	}
 }

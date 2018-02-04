@@ -8,6 +8,6 @@ public class Teacher extends Person{
 		this.subject=subject;
 	}
 	protected String getInfo() {
-		return "ÀüÈ­¹øÈ£ : "+super.getTel()+"  / ÀÌ¸§ : "+super.getName()+"  / ÁÖ¼Ò : "+super.getAddress()+"  / ºÎ¼­ : "+subject;
+		return "ì „í™”ë²ˆí˜¸ : "+super.getTel()+"  / ì´ë¦„ : "+super.getName()+"  / ì£¼ì†Œ : "+super.getAddress()+"  / ë¶€ì„œ : "+subject;
 	}
 }

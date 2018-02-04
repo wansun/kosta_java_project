@@ -5,19 +5,19 @@ class Person extends Animal{}
 class ZooService{
 	public void enter(Animal a) {
 		if(a instanceof Person)
-			System.out.println("³ª´Â »ç¶÷ÀÌ´Ù");
+			System.out.println("ë‚˜ëŠ” ì‚¬ëŒì´ë‹¤");
 		else if(a instanceof Dog)
-			System.out.println("³ª´Â °³´Ù");
+			System.out.println("ë‚˜ëŠ” ê°œë‹¤");
 		else if(a instanceof Animal)
-			System.out.println("³ª´Â µ¿¹°ÀÌ´Ù");
+			System.out.println("ë‚˜ëŠ” ë™ë¬¼ì´ë‹¤");
 	}
 }
 public class TestInstanceof2 {
 	public static void main(String[] args) {
 		ZooService service=new ZooService();
-		service.enter(new Person()); //³ª´Â »ç¶÷ÀÌ´Ù.
-		service.enter(new Dog()); //³ª´Â °³´Ù
-		service.enter(new Animal()); //³ª´Â µ¿¹°ÀÌ´Ù
+		service.enter(new Person()); //ë‚˜ëŠ” ì‚¬ëŒì´ë‹¤.
+		service.enter(new Dog()); //ë‚˜ëŠ” ê°œë‹¤
+		service.enter(new Animal()); //ë‚˜ëŠ” ë™ë¬¼ì´ë‹¤
 
 		
 	}

@@ -7,7 +7,7 @@
 //		LottoService service=new LottoService();
 //		TreeSet<Integer> lottoSet=service.createLottoSet();
 //		System.out.println(lottoSet);
-//		// 1ÀÌ»ó 45ÀÌÇÏÀÇ ÀÓÀÇÀÇ ¼ö°¡ Áßº¹¾øÀÌ 6°³ ¹İÈ¯µÇ¾î¾ß ÇÑ´Ù 
+//		// 1ì´ìƒ 45ì´í•˜ì˜ ì„ì˜ì˜ ìˆ˜ê°€ ì¤‘ë³µì—†ì´ 6ê°œ ë°˜í™˜ë˜ì–´ì•¼ í•œë‹¤ 
 //		// [3,6,9,11,18,27] 
 //	}
 //}

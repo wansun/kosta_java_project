@@ -3,7 +3,7 @@ package step13;
 public class PotatoPizzaService extends PizzaService {
 	@Override
 	protected void topping() {
-		System.out.println("°¨ÀÚ ÅäÇÎÀ» ¾ñ´Ù");
+		System.out.println("ê°ì í† í•‘ì„ ì–¹ë‹¤");
 	}
 
 }

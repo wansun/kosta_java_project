@@ -3,6 +3,6 @@ package step7;
 public class Monkey extends Animal{
 	@Override
 	public void play() {
-		System.out.println("¿ø¼şÀÌ°¡ ³ª¹«Å¸¸ç ³î´Ù");
+		System.out.println("ì›ìˆ­ì´ê°€ ë‚˜ë¬´íƒ€ë©° ë†€ë‹¤");
 	}
 }

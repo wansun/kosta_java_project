@@ -7,12 +7,12 @@ class Person{
 }
 public class TestStatic2 {
 	public static void main(String[] args) {
-		//money¿¡ °ªÀ» ÇÒ´ç
-		//static member variableÀÌ¹Ç·Î Å¬·¡½º¸íÀ¸·Î Á¢±Ù
-		//Áï º°µµÀÇ °´Ã¼ »ı¼º ÇÊ¿ä¾ø´Ù.
+		//moneyì— ê°’ì„ í• ë‹¹
+		//static member variableì´ë¯€ë¡œ í´ë˜ìŠ¤ëª…ìœ¼ë¡œ ì ‘ê·¼
+		//ì¦‰ ë³„ë„ì˜ ê°ì²´ ìƒì„± í•„ìš”ì—†ë‹¤.
 		Person.money=2;
 		System.out.println(Person.money);
-		//test1() ¸Ş¼­µå È£Ãâ
+		//test1() ë©”ì„œë“œ í˜¸ì¶œ
 		Person.test();
 	}
 }

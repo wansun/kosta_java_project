@@ -1,24 +1,24 @@
 package model;
 /**
- * ÇÐ±³ ±¸¼º¿ø Á¤º¸¸¦ °ü¸®ÇÏ´Â ¼­ºñ½º Å¬·¡½º
+ * í•™êµ êµ¬ì„±ì› ì •ë³´ë¥¼ ê´€ë¦¬í•˜ëŠ” ì„œë¹„ìŠ¤ í´ëž˜ìŠ¤
  * @author KOSTA16
  *
  */
 public class SchoolService {
 	/**
-	 * ÇÐ±³ ±¸¼º¿ø(ÇÐ»ý, ±³»ç, Á÷¿ø)Á¤º¸¸¦ ÀúÀåÇÏ´Â ¹è¿­
+	 * í•™êµ êµ¬ì„±ì›(í•™ìƒ, êµì‚¬, ì§ì›)ì •ë³´ë¥¼ ì €ìž¥í•˜ëŠ” ë°°ì—´
 	 */
 	private Person[] list=new Person[10];
 	/**
-	 * ÇÐ±³ ±¸¼º¿ø ¼ö¸¦ ÀúÀå
+	 * í•™êµ êµ¬ì„±ì› ìˆ˜ë¥¼ ì €ìž¥
 	 */
 	private int count;
 	/**
-	 * µî·Ï, Ãß°¡, °Ë»ö, ¼öÁ¤, »èÁ¦ ¾÷¹«¿¡¼­ <br>
-	 * °øÅëÀ¸·Î »ç¿ëÇÏ´Â ·ÎÁ÷À» ±¸ÇöÇÑ ¸Þ¼­µå <br>
-	 * ¹è¿­ ¿ä¼ÒÀÇ ±¸¼º¿ø tel°ú ¸Å°³º¯¼ö·Î Àü´ÞµÈ telÀ» <br>
-	 * ºñ±³ÇÏ¿© telÀÌ ÀÏÄ¡ÇÏ´Â ¿ä¼ÒÀÇ ÀÎµ¦½º¸¦ ¹ÝÈ¯ÇÑ´Ù. <br>
-	 * ¸¸¾à tel¿¡ ÀÏÄ¡ÇÏ´Â ±¸¼º¿øÀÌ ¾øÀ¸¸é -1À» ¹ÝÈ¯ÇÑ´Ù.
+	 * ë“±ë¡, ì¶”ê°€, ê²€ìƒ‰, ìˆ˜ì •, ì‚­ì œ ì—…ë¬´ì—ì„œ <br>
+	 * ê³µí†µìœ¼ë¡œ ì‚¬ìš©í•˜ëŠ” ë¡œì§ì„ êµ¬í˜„í•œ ë©”ì„œë“œ <br>
+	 * ë°°ì—´ ìš”ì†Œì˜ êµ¬ì„±ì› telê³¼ ë§¤ê°œë³€ìˆ˜ë¡œ ì „ë‹¬ëœ telì„ <br>
+	 * ë¹„êµí•˜ì—¬ telì´ ì¼ì¹˜í•˜ëŠ” ìš”ì†Œì˜ ì¸ë±ìŠ¤ë¥¼ ë°˜í™˜í•œë‹¤. <br>
+	 * ë§Œì•½ telì— ì¼ì¹˜í•˜ëŠ” êµ¬ì„±ì›ì´ ì—†ìœ¼ë©´ -1ì„ ë°˜í™˜í•œë‹¤.
 	 * @param tel
 	 * @return index
 	 */
@@ -33,34 +33,34 @@ public class SchoolService {
 		return index;
 	}
 	/**
-	 * ±¸¼º¿ø Á¤º¸¸¦ Ãß°¡ÇÏ´Â ¸Þ¼­µð <br>
-	 * Á¤¿ø ÃÊ°ú½Ã¿¡´Â Ãß°¡ ºÒ°¡ ¸Þ¼¼Áö¸¦ Ãâ·ÂÇÑ´Ù. <br>
-	 * ±âÁ¸ ±¸¼º¿ø tel°ú Áßº¹µÉ °æ¿ì telÀÌ Áßº¹µÊ ¸Þ¼¼Áö Ãâ·Â <br>
-	 * À§ µÎ°¡Áö »çÇ×¿¡ ÇØ´çµÇÁö ¾Ê´Â Á¤»óÀûÀÎ ±¸¼º¿øÀº <br> 
-	 * ¼øÂ÷ÀûÀ¸·Î ¹è¿­¿ä¼Ò¸¦ ÀúÀåÇÑ´Ù. <br>
+	 * êµ¬ì„±ì› ì •ë³´ë¥¼ ì¶”ê°€í•˜ëŠ” ë©”ì„œë”” <br>
+	 * ì •ì› ì´ˆê³¼ì‹œì—ëŠ” ì¶”ê°€ ë¶ˆê°€ ë©”ì„¸ì§€ë¥¼ ì¶œë ¥í•œë‹¤. <br>
+	 * ê¸°ì¡´ êµ¬ì„±ì› telê³¼ ì¤‘ë³µë  ê²½ìš° telì´ ì¤‘ë³µë¨ ë©”ì„¸ì§€ ì¶œë ¥ <br>
+	 * ìœ„ ë‘ê°€ì§€ ì‚¬í•­ì— í•´ë‹¹ë˜ì§€ ì•ŠëŠ” ì •ìƒì ì¸ êµ¬ì„±ì›ì€ <br> 
+	 * ìˆœì°¨ì ìœ¼ë¡œ ë°°ì—´ìš”ì†Œë¥¼ ì €ìž¥í•œë‹¤. <br>
 	 * @param person
 	 */
 	public void addPerson(Person person) {
 		if(count==list.length) {
-			System.out.println("!! Á¤ ¿ø ÃÊ °ú !! Ãß°¡ÇÒ ¼ö ¾ø½À´Ï´Ù.");
+			System.out.println("!! ì • ì› ì´ˆ ê³¼ !! ì¶”ê°€í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 		}else {
 			int index=findIndexByTel(person.getTel());
-			if(index!=-1) //±âÁ¸ tel ÀÌ Á¸ÀçÇÏ¸é Áßº¹µÇ¾î Ãß°¡ ºÒ°¡
-				System.out.println("!! Áßº¹ !! Ãß°¡ÇÒ ¼ö ¾ø½À´Ï´Ù.");
+			if(index!=-1) //ê¸°ì¡´ tel ì´ ì¡´ìž¬í•˜ë©´ ì¤‘ë³µë˜ì–´ ì¶”ê°€ ë¶ˆê°€
+				System.out.println("!! ì¤‘ë³µ !! ì¶”ê°€í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 			else
 				list[count++]=person;
 		}
 	}
 	/**
-	 * ±¸¼º¿ø ¸®½ºÆ®¸¦ Ãâ·ÂÇÏ´Â ¸Þ¼­µå
+	 * êµ¬ì„±ì› ë¦¬ìŠ¤íŠ¸ë¥¼ ì¶œë ¥í•˜ëŠ” ë©”ì„œë“œ
 	 */
 	public void printAll() {
 		for(int i=0;i<count;i++)
 			System.out.println(list[i]);
 	}
 	/**
-	 * tel·Î ±¸¼ºµÈ Á¤º¸¸¦ °Ë»öÇÏ¿© ¹ÝÈ¯ÇÏ´Â ¸Þ¼­µå <br>
-	 * Á¸ÀçÇÏÁö ¾ÊÀ¸¸é nullÀ» ¹ÝÈ¯ÇÑ´Ù.
+	 * telë¡œ êµ¬ì„±ëœ ì •ë³´ë¥¼ ê²€ìƒ‰í•˜ì—¬ ë°˜í™˜í•˜ëŠ” ë©”ì„œë“œ <br>
+	 * ì¡´ìž¬í•˜ì§€ ì•Šìœ¼ë©´ nullì„ ë°˜í™˜í•œë‹¤.
 	 * @param tel
 	 * @return person
 	 */
@@ -72,11 +72,11 @@ public class SchoolService {
 		return person;
 	}
 	/**
-	 * ±¸¼º¿ø Á¤º¸¸¦ ¼öÁ¤ÇÏ´À ¸Þ¼­µå <br>
-	 * tel°ú ÀÏÄ¡ÇÏ´Â ¹è¿­ ¿ä¼ÒÀÇ Á¤º¸¸¦ ¼öÁ¤ÇÑ´Ù. <br>
-	 * ¸¸¾à ¸Å°³º¯¼ö·Î Àü´ÞµÈ ±¸¼º¿ø °´Ã¼ÀÇ telÀÌ ÀÏÄ¡ÇÏ´Â <br>
-	 * ¹è¿­ ¿ä¼Ò°¡ ¾øÀ» °æ¿ì¿¡´Â tel ¿¡ ÇØ´çÇÏ´Â ±¸¼º¿øÀÌ ¾ø¾î ¼öÁ¤ºÒ°¡<br>
-	 * ¸Þ¼¼Áö¸¦ Ãâ·ÂÇÑ´Ù.
+	 * êµ¬ì„±ì› ì •ë³´ë¥¼ ìˆ˜ì •í•˜ëŠ ë©”ì„œë“œ <br>
+	 * telê³¼ ì¼ì¹˜í•˜ëŠ” ë°°ì—´ ìš”ì†Œì˜ ì •ë³´ë¥¼ ìˆ˜ì •í•œë‹¤. <br>
+	 * ë§Œì•½ ë§¤ê°œë³€ìˆ˜ë¡œ ì „ë‹¬ëœ êµ¬ì„±ì› ê°ì²´ì˜ telì´ ì¼ì¹˜í•˜ëŠ” <br>
+	 * ë°°ì—´ ìš”ì†Œê°€ ì—†ì„ ê²½ìš°ì—ëŠ” tel ì— í•´ë‹¹í•˜ëŠ” êµ¬ì„±ì›ì´ ì—†ì–´ ìˆ˜ì •ë¶ˆê°€<br>
+	 * ë©”ì„¸ì§€ë¥¼ ì¶œë ¥í•œë‹¤.
 	 * @param person
 	 */
 	public void updatePerson(Person person) {
@@ -84,31 +84,31 @@ public class SchoolService {
 		if(index>-1)
 			list[index]=person;
 		else
-			System.out.println("!! tel¿¡ ÇØ´çÇÏ´Â ±¸¼º¿ø ¾ø¾î¼­ ¼öÁ¤ºÒ°¡ !!");
+			System.out.println("!! telì— í•´ë‹¹í•˜ëŠ” êµ¬ì„±ì› ì—†ì–´ì„œ ìˆ˜ì •ë¶ˆê°€ !!");
 	}
 	/**
-	 * ÇÐ±³ ±¸¼º¿ø Á¤º¸¸¦ »èÁ¦ÇÏ´Â ¸Þ¼­µå <br>
-	 * ¸Å°³º¯¼ö·Î Àü´Þ¹ÞÀº tel °ú ÀÏÄ¡ÇÏ´Â ¹è¿­ ¿ä¼Ò¸¦ »èÁ¦ÇÑ´Ù <br>
-	 * Àü´Þ¹ÞÀº telÀÌ ¸î¹ø¤Š ÀÎµ¦½º¿¡ À§Ä¡ÇÏ´Â Áö ¾Ë¾Æ³½´Ù <br>
-	 * »èÁ¦ ´ë»ó ¿ä¼Ò ÀÎµ¦½º À§Ä¡¿¡ ÀÎµ¦½º+1 ÇÑ ¿ä¼ÒÀÇ ÁÖ¼Ò°ªÀ» <br>
-	 * ÀçÇÒ´çÇÏ´Â ¹æ½ÄÀ¸·Î »èÁ¦ÇÏ¸é µÈ´Ù. <br>
-	 * ¸¸¾à »èÁ¦´ë»óÀÌ ¹è¿­ÀÇ °¡Àå ¸¶Áö¸·ÀÏ °æ¿ì¿¡´Â<br>
-	 * Á÷Á¢ nullÀ» ÀÔ·ÂÇÑ´Ù. <br>
-	 * »èÁ¦ÀÛ¾÷ÀÌ ¿Ï·áµÇ¸é ÇöÀç ÀÎ¿ø¼ö count¸¦ -1 °¨¼Ò½ÃÅ²´Ù.
+	 * í•™êµ êµ¬ì„±ì› ì •ë³´ë¥¼ ì‚­ì œí•˜ëŠ” ë©”ì„œë“œ <br>
+	 * ë§¤ê°œë³€ìˆ˜ë¡œ ì „ë‹¬ë°›ì€ tel ê³¼ ì¼ì¹˜í•˜ëŠ” ë°°ì—´ ìš”ì†Œë¥¼ ì‚­ì œí•œë‹¤ <br>
+	 * ì „ë‹¬ë°›ì€ telì´ ëª‡ë²ˆì¨° ì¸ë±ìŠ¤ì— ìœ„ì¹˜í•˜ëŠ” ì§€ ì•Œì•„ë‚¸ë‹¤ <br>
+	 * ì‚­ì œ ëŒ€ìƒ ìš”ì†Œ ì¸ë±ìŠ¤ ìœ„ì¹˜ì— ì¸ë±ìŠ¤+1 í•œ ìš”ì†Œì˜ ì£¼ì†Œê°’ì„ <br>
+	 * ìž¬í• ë‹¹í•˜ëŠ” ë°©ì‹ìœ¼ë¡œ ì‚­ì œí•˜ë©´ ëœë‹¤. <br>
+	 * ë§Œì•½ ì‚­ì œëŒ€ìƒì´ ë°°ì—´ì˜ ê°€ìž¥ ë§ˆì§€ë§‰ì¼ ê²½ìš°ì—ëŠ”<br>
+	 * ì§ì ‘ nullì„ ìž…ë ¥í•œë‹¤. <br>
+	 * ì‚­ì œìž‘ì—…ì´ ì™„ë£Œë˜ë©´ í˜„ìž¬ ì¸ì›ìˆ˜ countë¥¼ -1 ê°ì†Œì‹œí‚¨ë‹¤.
 	 * @param tel
 	 */
 	public void deletePerson(String tel) {
 		int index=findIndexByTel(tel);
 		if(index>-1) {
 			for(int i=index;i<count;i++) {
-				if(i+1==list.length) //¸¶Áö¸· ¿ä¼Ò¸¦ »èÁ¦ÇÒ °æ¿ì
+				if(i+1==list.length) //ë§ˆì§€ë§‰ ìš”ì†Œë¥¼ ì‚­ì œí•  ê²½ìš°
 					list[i]=null;
 				else
 				list[i]=list[i+1];
 			}
 			count--;
 		}else {
-			System.out.println("!! »èÁ¦ ÇÒ ±¸¼º¿ø ¾ø½À´Ï´Ù. !!");
+			System.out.println("!! ì‚­ì œ í•  êµ¬ì„±ì› ì—†ìŠµë‹ˆë‹¤. !!");
 		}
 	}
 	
