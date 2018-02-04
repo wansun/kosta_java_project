@@ -1,0 +1,23 @@
+Java SE 2일차 수업
+
+Object Oriented[객체지향] -> 분석 설계 기법 중 하나(객체와 객체로 이루어짐) / 폭포수 개발방법론 / 마일스톤
+                                        폭포수 개발방법론 : 소프트웨어를 만들기 위한 프로세스 / 마일스톤 : 소프트웨어 개발 이정표
+
+OOAD (Object Oriented Analysis and Design) - UML - 객체지향 / 분석설계 / 모델링언어
+
+Object 객체 -> 시스템의 기본단위 / 속성(변수)과 기능(메서드)으로 구성
+
+클래스는 객체의 틀
+Object or Instance : Instance는 객체의 또 다른 단
+  Object  와   class관계
+(건물,붕어빵)  (설계,붕어빵틀)
+
+응집도는 높고 결합도는 낮아야한다. 응집도 : 자신의 역할에 집중하는 정도 / 결합도 : 의존 정도
+
+Object Oriented 주요개념 : 1.Encapsulation 2.Inheritance 3.Polymorphism
+
+Encapsulation 캡슐화 / public interface , private implementation(구현부)
+                                       (정보은닉,보호,유지보수성 향상) *구현부 업뎃되어도 커뮤니케이션 문제없다.
+                                                                                                                        사용법이 간단해진다. 
+                                                                                                                        구현부를 몰라도 인터페이스만 알면 
+                                                                                                                        사용가능하다. 결국 생산성 향상

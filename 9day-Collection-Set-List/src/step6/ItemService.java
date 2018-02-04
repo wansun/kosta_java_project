@@ -1,0 +1,26 @@
+package step6;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.LinkedHashSet;
+
+public class ItemService {
+	
+	public Collection<String> delivery(String requestType) {
+		Collection<String> col=null;
+		if(requestType.equals("»óÇ°Á¾·ù")) {
+			col=new LinkedHashSet<String>();
+			col.add("Á·¹ß");
+			col.add("ÇÇÀÚ");
+			col.add("Ä¡¸Æ");
+		}else if(requestType.equals("»óÇ°¸ñ·Ï")) {
+			col=new ArrayList<String>();
+			col.add("»ï°ã»ì");
+			col.add("°¨ÀÚÅÁ");
+			col.add("¾ç²¿Ä¡");
+			col.add("Äªµû¿À");
+		}
+		return col;
+	}
+
+}

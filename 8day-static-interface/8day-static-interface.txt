@@ -1,0 +1,120 @@
+**8일차 주요목차**
+- static
+- final
+- interface
+- Collection
+
+-------------------------------
+-static
+ 	정적 <--------> 동적 Object
+ 
+ java 실행단계
+ class loading -> bytecode 검증 -> Interpreter 가 실행 (runtime)
+ 
+ class loading 단계에서 class 메타정보(패키지,클래스,메서드..)를 메모리에 적재,
+ static은 이 시점에 메모리 적재된다.
+ 
+ jaba memory 구조
+ 1) class Area : class meta 정보가 저장된다 (package, class, method, type등의 정보)
+                 static member 정보가 저장된다.
+                 method area라고도 한다.
+ 2) stack : 지역변수정보가 저장된다.
+ 3) heap : 객체, 즉 인스턴스 변수 정보가 저장된다.
+ 
+ static 특징
+ static member를 calss의 meber라고 한다.
+ 별도의 객체 생성없이 클래스 호출만으로 static 변수 및 메서드 사용가능
+ class loading 시 한번 메모리에 적재된다.
+ 
+ static과 non-static 접근은 다음과 같다.
+ static에서 non-static 멤버로 접근하려면 직접 접근은 불가능하고
+ 객체 생성 후 접근해야 한다.
+ non-static에서 static 멤버로 접근은 직접 접근이 가능하다.
+ ex)
+ 		void test1(){ //non-static
+ 			test2(); //바로 접근해 호출가능
+ 		}
+ 		static void test2(){ //static
+ 			test3(); //compile error. test3은 객체 멤버이므로
+ 		             //아래와같이 객체 새성해야 호출 가능함.
+ 			new 클래스명().test3();
+ 		}
+ 		void test3(){ //non-static
+ 		
+ 		}
+ 
+ - final
+ 	1) final 상수 : 재할당 불가
+ 				    상수는 대문자로 구성, 합성어는 _ 로 연결한다
+ 				  final int MAX_PRICE=100;
+ 	2) final 클래스 : subclassing 불가
+ 					final로 선언된 클래스를 상속받을수 없다
+ 					
+ 	3) final 메서드 : 자식 클래스에서 오버라이딩 할 수 없다
+ 
+ - Interface : 표준
+                            메세지 방식의 표준화, 커뮤니케이션의 표준화
+                            구현체(서비스 제공하는측)와 사용하는 측과의 약속
+                            
+                            다중상속의 장점을 가진다
+                            자바는 단일 상속이다
+                            인터페이스가 다중 상속의 효과를 가진다는 것은
+                            상속의 장점 중 부모 멤버를 물려받는다는 측면이 아니라
+                            계층구조 형성을 다양하게 할 수 있다는 점이다
+                            계층구조 형성을 통한 다형성 적용 환경을 다양하게 제공할 수 있다.
+                            ** 인터페이스는 플레이어 재생버튼이라 생각하면된다. **
+                            
+ - Interface 특징
+ 	일반적은 상속은 하나의 클래스만 가능. 즉 extends 한번만 가능
+ 	인터페이스는 다수의 인터페이스를 implements 할 수 있다.
+ 	
+ 	ex) class SuperMan extends Person implements Flyer,Fighter{}
+ 	
+ 	인터페이스는 주로 abstract method를 선언하고
+ 	필요시 public static final 상수 필드를 선언하기도 한다.
+ 	java8(jdk1.8) 이상에서는 인터페이스에 static method 와
+ 	default method를 정의할 수 있도록 지원한다.
+ 	
+ 	ex) public interface Flyer{
+ 			public void fly(); // abstract는 생략가능
+ 		}
+ 		public calss Bird implements Flyer{
+ 			//반드시 인터페이스 Flyer 의 fly 메서드를 구현해야 한다.
+ 			//만약 구현하지 않으면 Bird class는 abstract로 명시해야 한다
+ 			public void fly(){}	
+ 		}
+ 		
+ - relationship
+ 
+ 	realization : 인터페이스를 implements(구현)
+ 	generalization : is a 관계 상속 (extends)
+ 	association : use a
+ 	aggregation : has a
+ 	composition : consist of
+ 	
+ 	
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

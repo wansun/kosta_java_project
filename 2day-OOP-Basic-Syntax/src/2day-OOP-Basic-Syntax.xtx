@@ -1,0 +1,48 @@
+*** 2day 주요 목차 ***
+- 객체 지향 개념
+- 객체 Object
+- 클래스 class
+- 변수
+- 메서드
+- 접근제어자 public 과  private
+- Encapsulation 개념과 적용
+- 
+---------------------------------
+- 폭포수 모델 (개발 방법론) : 소프트웨어 개발을 위한 프로세스
+                                           요구분석-설계-구현-테스트-유지보수
+- 마일스톤 : 소프트웨어 개발 이정표, 프로젝트 개발 단계
+- 객체지향 : 분석 설계 개발 기법중 하나, 객체의 기본 단위로 객체와 객체의 관계를 중심으로 분석 설계하는 기법
+- UML : 객체지향의 분석 설계 모델링 언어, 대표적인 다이어그램은 Use Case Diagram, Class Diagram 등이 있다.
+- 객체 : 시스템 기본단위, 속성과 기능으로 구성
+- 클래스 : 객체 생성을 위한 설계도 or 틀
+         건물 설계도(Class)     건물(Object)
+         붕어빵틀                          붕어빵
+- 응집도(cohesion) 결합도(coupling) : 응집도는 자신의 역할에 집중하는 정도 / 결합도는 외부 요소와 의존 정도
+	높은 응집도, 낮은 결합도
+- Encapsulation : 인캡슐레이션은 외부 인터페이스와 내부 임플리먼테이션(구현부)으로 구성된 캡슐화 된 정보
+	인터페이스와 구현부를 분리하여 설계 ("public interface , private implementation")
+	Encapsulation 효과 : 정보 은닉, 유지보수성 향상(구현부 업뎃되어도 외부 소통에는 영향이 없다)
+						생산성향상(인터페이스만 알면 구현부 몰라도 사용가능)
+- 접근 제어자 (access modifier)
+	접근 제어자의 종류
+	public > protected > default > private
+	
+	public : 어디서나 접근가능
+	protected : 이후에 수업예정
+				같은 팩키지 내에서 접근 가능
+				but 상속관계에서는 다른 팩키지에서도 접근할 수 있다.
+	[default] : 같은 팩키지 내에서 접근 가능
+	private : 클래스 내부에서만 접근 가능
+	
+	
+----------------------------------------------------------------
+3일차 수업목차
+- review
+- 생성자
+- UML : Class Diagram
+- java 데이터 타입
+  1) primitive data type
+  2) reference data type
+- 연산자와 제어문
+- relationship : use a, has a
+

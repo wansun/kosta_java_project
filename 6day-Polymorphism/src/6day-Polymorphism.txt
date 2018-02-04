@@ -1,0 +1,56 @@
+**6일차 주요목록**
+- Polymorphism
+  : 다형성이란
+  	하나의 메세지 방식으로
+  	다양한 객체들이
+  	각자의 방식으로
+  	다양하게 동작하는 성질
+  	"One interface, Multiple Implemets"
+  	ex) Play button과 같은 메세지(소통) 방식으로
+  		음악, 동영상, 자바실행프로그램 등과 같이 다양한 방식으로 실행한다.
+  		
+	Animal a=new Animal(); //객체는 자신의 타입으로 참조된다.
+	Car c=new Animal(); //compile error
+	//만약 Animal 자식으로 Person 객체가 계층구조화 되어 있다면
+	Animal ani=new Person(); //부모 타입으로 자식 객체 참조 가능하다
+	
+	판교                                                               하와이
+	rv.pass(new Animal());  -----------> public void pass(Animal a){}
+	rv.pass(new Person());  -----------> public void pass(Person p){}
+	rv.pass(new Dog());  -----------> public void pass(Dog d){}
+	//위와 같이 객체 타입별로 처리하지 않아도 된다
+	//계층구조형성이 되어 있다면 다형성이 지원되므로
+	//일반화된 하나의 타입으로 다양한 객체들을 하나의 메서드로 모두 처리할 수 있다.
+	판교                                                               하와이
+	rv.pass(new Animal());  -----------> public void pass(Animal a){a.eat();}
+	rv.pass(new Person());  ----------->
+	rv.pass(new Dog());  -----------> 
+	
+- instanceof 연산자
+   객체의 타입을 비교하는 연산자
+  is a 관계 즉 부모 타입 또한 true를 반환
+  
+- Object Casting (Object down casting)
+	Animal a=new Person();
+	부모 타입의 변수로 자식 객체를 참조할 때
+	부모로부터 상속받은 멤버(변수,메서드)
+	오버라이딩한 메서드는 직접 접근가능하지만
+	자식의 독자적 멤버에는 접근 할 수 없다.
+	자식에 정의된 독자적 멤버에 접근하기 위해 Object casting 을 한다
+	((Person).a).study();
+	
+- abstract keyword
+	1) abstract class : class에 abstract가 선언되면 직접 객체화 될 수 없다
+						ex)abstract class Animal{}
+							new Animal(); // compile error
+						부모클래스로서 자식에게 멤버를 물려주고
+						다형성을 지원하기 위해 사용된다.
+	2) abstract method : 구현부가 없는 method
+						ex) public abstract void study();
+						abstract method가 있는 클래스는 상속받으면 
+						자식클래스에서 반드시 구현해야 한다.
+						구현하지 않으면 자식클래스 또한 abstract class로 선언해야함.
+						즉 abstract method는 자식 클래스에게 기능 구현을 강제하기 위해 선언
+						
+
+	

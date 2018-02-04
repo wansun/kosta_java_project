@@ -1,0 +1,31 @@
+**review**
+- Object-Oriented 주요개념
+  Encapsulation : public interface, private implementation
+  Inheritance : 상속, 부모 멤버를 재사용, 계층구조를 형성
+  Polymorphism : 하나의 메세지 방식으로 다양한 객체가 각자의 방식으로 동작하는 성질
+   오버로딩(Overloading) : 같은 이름으로 다양한 매개변수를 정의
+   참고) 문법 : 메서드 이름은 같아야 하고 매개변수의 타입, 숫자가 달라야한다. 
+                      접근 제어자와 리턴타입은 관계가 없다
+   오버라이딩(Overriding) : 부모 메서드를 자신에 맞게 재정의
+   참고) 문법 : 메서드 이름은 같아야 하고 매개변수와 리턴타입도 같아야 함. 접근 제어자는 하위,
+                      즉 자식으로 갈수록 좁아지면 안된다.
+  OOAD -> UML -> Class Diagram
+  
+  객체간의 관계 (relationship)
+  사람과 렌트 : association
+  사람과 스마트폰 : aggregation
+  사람과 뇌 : composition
+  사람은 동물이다 : generalization
+  
+  abstract class : 부모로서의 역할을 위해 존재한다.
+                                   자신은 직접 객체화 될 수 없다.
+                                   
+  abstract method : 자식 클래스에서 반드시 구현해야 하는 메서드
+                                     자식 클래스에게 구현을 강제하기 위해 사용
+                                    
+  ex) 피자서비스
+  
+**8일차 수업목록**
+- Static
+- final
+- interface

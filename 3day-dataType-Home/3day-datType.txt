@@ -1,0 +1,91 @@
+3일차 수업목차
+- review
+- 생성자
+- java 데이터 타입
+	1) primitive data type
+	2) reference data type
+- 연산자와 제어문
+---------------------------------------
+- review
+	class 구성요소 (현재까지)
+	
+	package model; //팩키지 선언
+	import java.util.List; //import 선언, 다른 팩키지 자원을 사용할 때
+	public class Person{//class 선언, 객체 생성을 위한 틀
+		//인스턴스 변수 instance variable : 객체의 속성 정보 저장
+		private String name; // private 으로 접근 제한
+		//생성자 : 객체 생성시 호출되어 실행되는 요소
+		public Person(String name){
+				this.name=name;
+		}
+		
+		//메서드 : 객체의 기능 정의
+		public String getName(){
+		 		return name;
+		}
+	}
+
+- 생성자 ( Constructor )
+	: 객체 생성시 호출되어 실행되는 클래스 구성요소
+		별도의 객체 초기화 작업이 필요한 경우
+		명시적으로 생성자를 정의한다.
+		
+		클래스 내에서 생성자가 명시하지 않을 경우
+		컴파일시 컴파일러가 기본 생성자를 삽입한다.
+		
+		생성자는 클래스 이름과 동일해야 한다.
+		메서드와 다르게 별도의 리턴 타입은 없다.
+		
+		ex)
+		생성자 호출                                                        class Person{
+		new Person();        -- call -->      Person(){} //생성자 실행 완료 후 메모리 적재
+		                                                           }
+- java 데이터 타입
+	1) primitive data type 기본형 데이터 타입
+	                   1byte           2byte         4byte            8byte
+	정수형        byte       short          int            long             정수 기본형 int
+	실수형                                                                                    float                double 실수기본형 double
+	문자형                                       char
+	논리형        boolean
+	
+	2) reference data type 참조형 : 데이터 타입 (일반적으로 클래스)
+		객체를 참조하는 변수의 데이터타입을 참조형 데이터타입이라고 한다.
+		Person p=new Person();
+		--- 위 코드를 요소별로 분석 ---
+		Person : 참조형 데이터 타입 (일반적으로 클래스명)
+		p : 참조변수 (객체를 참조하는 변수 reference variable)
+		= : 할당 assing
+		new : 객체 생성시 사용하는 자바 키워드 (예약어)
+		Person() : 생성자 Constructor
+		
+		ex) String name; //String 은 참조형 데이터 타입
+			Person p;    // Person 은 참조형 데이터 타입
+			
+	- 제어문
+	1)조건문
+			if, (else if, else)
+			
+			switch
+			
+	2)반복문
+			for
+			while
+			do while
+			
+** 4일차 수업목차 **
+-Variable Scope
+	인스턴스 변수, 지역변수
+	객체 초기화 단계
+-UML : Class Diagram
+-relationship : use a , has a
+-Array(배열)
+-Inheritance(상속)
+
+		
+		
+		
+		
+		
+		
+		
+		

@@ -1,0 +1,63 @@
+**9일차 주요 목차**
+- Collection API (or Framework) (Set, List, Map)
+	: java 자료 구조체를 정의한 인터페이스와 객체 그룹 (바구니)
+	   최상위 인터페이스는 java.util.Collection Interface
+	   하위의 대표적인 인터페이스는 Set과  Interface가 있다.
+	   별도로 java.utl.Map 인터페이스가 있다.
+	   
+	  Set 계열의 특징 : 동일한 데이터가 추가되지 않는다.
+	                               중복허용하지 않는다.
+	  List 계열의 특징 : 순번(index)으로 관리된다.
+	  
+	  Generic : 미리 타입을 지정한다.
+	  			데이터의 안정성을 보장하고
+	  			객체 캐스팅 절차를 감소한다.
+	  			ex) TreeSet<Integer> set=new TreeSet<Integer>();
+	  				set.add(1);
+	  				// set.add("아이유"); //정수형만 저장가능
+	  			ex2)
+	  			package step3;
+
+				import java.util.ArrayList;
+	
+				public class TestList2 {
+					public static void main(String[] args) {
+						ArrayList list=new ArrayList();
+						list.add(new Friend("이윤희","수원",31));
+						//리스트 첫번째 요소의 이름만 출력
+						Object obj=list.get(0);
+						Friend f=(Friend)obj; //object casting이 필요
+						System.out.println(f.getName());
+						//Generic을 적용하면 캐스팅 절차가 필요없다.
+						ArrayList<Friend> genericList=new ArrayList<Friend>();
+						genericList.add(new Friend("이윤희","수원",31));
+						//generic 적용된 리스트의 첫번쨰 요소의 이름을 출력
+						System.out.println(genericList.get(0).getName());
+					}
+				}
+				
+- Iterator 인터페이스
+	: 반복자 계열의 요소들을 반복해 열거하기 위한
+	표준화된 방법을 제공한다.
+	
+	hasNext() : boolean -> 다음 요소로 이동하여 요소가 존재하면 true
+							존재하지 않으면 false
+	next() : Object -> 다음 요소를 반환
+	
+	참고) Collection 계열의 최상위 인터페이스인
+		java.util.Collection interface 에서
+		iterator() : Iterator
+		추상 메서드를 선언하고 있다.
+		즉 Collection 계열의 하위 구현체들은 모두
+		이 추상 메서드를 구현하고 있으므로
+		표준화된 단일한 방법으로 요소를 추출하여 열거할 수 있게 한다.
+	
+	
+ - Map
+ 	key와 value 쌍으로 저장된다
+ 	key를 이용한 검색, 수정, 삭제에 용이한 자료구조
+ 	ex) HashMap<String,Person> map=new HashMap<String,Person>();
+ 		map.put("010101010",personObject); //추가
+ 		Person person=map.get("010101010"); //key를 통한 검색
+ 			
+	
