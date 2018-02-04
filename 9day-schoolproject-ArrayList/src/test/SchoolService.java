@@ -2,7 +2,6 @@ package test;
 
 import java.util.ArrayList;
 
-import model.Employee;
 import model.Person;
 
 public class SchoolService {
@@ -24,7 +23,7 @@ public class SchoolService {
 			if(findIndexByTel(person.getTel())==-1) 
 				list.add(person);
 			else
-				System.out.println("**** Áßº¹ºÒ°¡(tel Áßº¹) ****");
+				System.out.println("**** ì¤‘ë³µë¶ˆê°€(tel ì¤‘ë³µ) ****");
 	}
 
 	
@@ -33,12 +32,12 @@ public class SchoolService {
 			System.out.println(list.get(i));
 	}
 	
-	/*public Person findPersonByTel(String tel){
+	public Person findPersonByTel(String tel){
 		Person person=null;
 		int index=findIndexByTel(tel);
 		if(index>-1)
-			
-		return person;*/
+			person=list.get(index);
+		return person;
 	}
 
 	public void updatePerson(Person person) {
@@ -46,10 +45,17 @@ public class SchoolService {
 		if(index>-1)
 			list.set(index,person);
 		else {
-			System.out.println("¼öÁ¤ÇÒ Á¤º¸°¡ ¾ø½À´Ï´Ù");
+			System.out.println("ìˆ˜ì •í•  ì •ë³´ê°€ ì—†ìŠµë‹ˆë‹¤");
 		}
 	}
 	
+	public void deletePerson(String tel) {
+		int index=findIndexByTel(tel);
+		if(index>-1)
+			list.remove(index);
+		else
+			System.out.println("ì‚­ì œí•  ì •ë³´ê°€ ì—†ìŠµë‹ˆë‹¤.");
+	}
 }
 
 
