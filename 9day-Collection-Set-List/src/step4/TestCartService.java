@@ -1,21 +1,19 @@
 package step4;
 
-import java.util.ArrayList;
-
 public class TestCartService {
 	public static void main(String[] args) {
 		CartService service=new CartService();
-		service.addProduct(new Product("ÂüÀÌ½½","Áø·Î",1000));
-		service.addProduct(new Product("»õ¿ì±ø","³ó½É",1200));
-		service.addProduct(new Product("Á·¹ß","¿À¶Ñ±â",14000));
-		service.addProduct(new Product("°¨ÀÚ±ø","³ó½É",1500));
-		System.out.println("**Àå¹Ù±¸´Ï¿¡ ÀÖ´Â »óÇ°¸ñ·Ï Ãâ·Â**");
+		service.addProduct(new Product("ï¿½ï¿½ï¿½Ì½ï¿½","ï¿½ï¿½ï¿½ï¿½",1000));
+		service.addProduct(new Product("ï¿½ï¿½ï¿½ï¿½ï¿½","ï¿½ï¿½ï¿½",1200));
+		service.addProduct(new Product("ï¿½ï¿½ï¿½ï¿½","ï¿½ï¿½ï¿½Ñ±ï¿½",14000));
+		service.addProduct(new Product("ï¿½ï¿½ï¿½Ú±ï¿½","ï¿½ï¿½ï¿½",1500));
+		System.out.println("**ï¿½ï¿½Ù±ï¿½ï¿½Ï¿ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½**");
 		service.printAll();
 		/*int totalPrice=service.getTotalPrice();
-		System.out.println("°áÁ¦ÃÑ¾× : "+totalPrice);
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¾ï¿½ : "+totalPrice);
 		
-		ArrayList<Product> list=service.findProductListByMaker("³ó½É");
+		ArrayList<Product> list=service.findProductListByMaker("ï¿½ï¿½ï¿½");
 		for(int i=0;i<list.size();i++)
-			System.out.println(list.get(i)); //³ó½É Á¦Ç°ÀÇ »óÇ° Á¤º¸¸¸ Ãâ·Â
+			System.out.println(list.get(i)); //ï¿½ï¿½ï¿½ ï¿½ï¿½Ç°ï¿½ï¿½ ï¿½ï¿½Ç° ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 */	}
 }
