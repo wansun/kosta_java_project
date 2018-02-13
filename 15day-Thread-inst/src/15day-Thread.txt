@@ -1,0 +1,84 @@
+**Thread**
+- Thread 개념 
+- Thread 생성 방법 두가지 
+- Thread 실행 및 흐름 제어 
+
+---------------------------
+- Thread 개념 
+   : 사전적인 의미는 실 
+     프로세스는 현재 실행중인 프로그램 
+     스레드는 프로세스 내의 세부적 실행단위 
+     ex1)  동영상 플레이어를 실행 - 동영상 프로세스 
+            영상스레드, 음향스레드 , 자막스레드가 동시에 실행되어야 한다 
+            
+     ex2)  채팅창을 실행한다 - 채팅 프로세스 
+     		친구들의 메세지를 입력받는 스레드와 
+     		나의 메세지를 전송하는 스레드가 동시에 실행되어야 한다 
+     
+     ex3)  여러명의 고객이 식당을 입장한다 - 식당 프로세스 
+     		여러명의 직원 스레드가 각각의 손님에게 주문을 받는다 		       
+    		- 주문받는 스레드가 여러개 동시에 실행되어야 한다 
+    		
+     ex4)  신한카드 콜센터에  여러 고객이 동시에 전화한다 - 콜센터 프로세스
+     		콜센터 직원 스레드가 동시에 각각의 고객과 상담한다 		
+     		-콜센터 상담 스레드 
+     		
+    - Thread 생성방법 
+    	1) extends Thread 
+    	2) implements Runnable 
+   
+    - Thread 실행 및 흐름 제어  
+       
+       code 상에서는 start() 를 이용해 대상 스레드가 실행가능상태가
+       되도록 한다 
+       
+       Thread 실행 내용을 정의한 run() 메서드는 jvm 이 스케줄링을 해서
+       호출한다	
+    	
+       ex)    public class InputWorker implments Runnable{
+       				// 스레드 스케줄링에 의해 jvm이 호출 
+       				public void run(){
+       					//InputWorker Thread의 실행내용 
+       				}
+       		  }		
+       		  public class TestThread{
+       		  		public static void main(String args[]){
+       		  			Thread t=new Thread(new InputWorker());
+       		  			t.start(); // InputWorker Thread가 실행가능상태로 된다
+       		  		}       		  
+       		  }
+     		
+  - Thread 우선순위 ( priority ) 
+  	스레드 우선순위는 기본은 5 ( NORM_PRIORITY ) 
+  	가장 낮은 우선순위는 1 ( MIN_PRIORITY )
+  	가장 높은 우선순위는 10 ( MAX_PRIORITY ) 
+  	우선순위가 높으면 스케줄을 받을 확률을 높인다   		
+     		
+ Daemon Thread : 백그라운드에서 실행되는 스레드 
+  						 자신을 실행시킨 스레드가 종료되면 같이 종료된다
+  						 ex) 워드 작업을 수행시에 
+  							  백그라운드에서 일정 시간을 주기로 백업을 
+  							  해야 한다 
+  							  워드 스레드와 백업스레드가 필요하고
+  							  백업스레드가 Daemon Thread 가 되면 된다     		
+     		
+     		
+    		
+    		
+    		
+    		
+    		
+    		
+    		
+    		
+    		
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   

@@ -1,5 +1,12 @@
 package school.test;
 
-public class TestSchoolConsoleUI {
+import school.model.SchoolConsoleUI;
 
+
+public class TestSchoolConsoleUI {
+	public static void main(String[] args) {
+		SchoolConsoleUI console=new SchoolConsoleUI();
+		
+		console.execute();
+	}
 }

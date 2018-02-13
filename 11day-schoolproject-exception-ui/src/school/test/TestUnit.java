@@ -1,50 +1,52 @@
 package school.test;
 
 import school.model.Employee;
+import school.model.Person;
 import school.model.SchoolService;
 import school.model.Student;
 import school.model.Teacher;
 import schoole.exception.PersonExistException;
+import schoole.exception.PersonNotFoundException;
 
 //SchoolService의 Exception 적용 테스트
 public class TestUnit {
-	  public static void main(String[] args) {
+	  public static void main(String[] args){
 	    SchoolService service = new SchoolService();
 	    try {
 	    	service.addPerson(new Student("011", "공유", "판교", "14"));
 	    } catch (PersonExistException e) {
-	     System.out.println(e.getMessage());
+	    	System.out.println(e.getMessage());
 	    }
 	    try {
 	     service.addPerson(new Teacher("016", "광유", "강남", "국어"));
 	    } catch (PersonExistException e) {
-	     System.out.println(e.getMessage());
+	    	System.out.println(e.getMessage());
 	    }
 	    try {
 	     service.addPerson(new Employee("017", "아이유", "판교", "총무"));
 	    } catch (PersonExistException e) {
-	     System.out.println(e.getMessage());
+	    	System.out.println(e.getMessage());
 	    }
 	    try {
 	     service.addPerson(new Teacher("016", "설현", "판교", "수학"));
 	    } catch (PersonExistException e) {
-	     System.out.println(e.getMessage());
+	    	System.out.println(e.getMessage());
 	    }
 	    service.printAll(); 
 	    System.out.println("****************step1:add 완료****************");
-	    /*try {
-	     Person rp = service.findPersonByTel("017");
-	     System.out.println(rp);
+	    try {
+	    	Person rp = service.findPersonByTel("017");
+	     	System.out.println(rp);
 	    } catch (PersonNotFoundException e) {
-	     System.out.println(e.getMessage());
+	    	System.out.println(e.getMessage());
 	    }
 	    try {
 	     Person rp = service.findPersonByTel("010");
-	     System.out.println(rp);
+	     	System.out.println(rp);
 	    } catch (PersonNotFoundException e) {
-	     System.out.println(e.getMessage());
+	    	System.out.println(e.getMessage());
 	    }
-	    System.out.println("****************step2:find 완료****************");  
+	    	System.out.println("****************step2:find 완료****************");  
 	    try {
 	     service.deletePersonByTel("016");
 	     System.out.println("삭제 ok");
@@ -58,7 +60,7 @@ public class TestUnit {
 	     System.out.println(e.getMessage());
 	    }
 	    service.printAll();  
-	    System.out.println("****************step3:delete 완료****************"); */
+	    System.out.println("****************step3:delete 완료****************"); 
 	    }
 	}
 	/**********************************************
